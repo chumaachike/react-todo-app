@@ -5,6 +5,8 @@ function InputTodo ({addTitle}){
   const handleChange = (event)=>{
     setState([event.target.name] = event.target.value)
   }
+
+  
   const handleSubmit = (event)=>{
     event.preventDefault()
     if(state !== '' && typeof state !== 'object'){
